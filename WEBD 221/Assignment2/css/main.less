@@ -22,9 +22,13 @@ header{
   .headerLayout();
 }
 
-.banner,.reviews,.tour,.tour_expanded{
-  .sectionLayout();
+.banner{
+  .sectionLayout(12);
 }
+
+// .banner,.reviews,.tour,.tour_expanded{
+//   .sectionLayout();
+// }
 
 footer{
   .footerLayout();
@@ -37,12 +41,12 @@ footer{
 
 //Reviews Preview Section
 .reviews{
-  .column(7);
+  .sectionLayout(7);
 }
 
 //Tour Preview Section
 .tour{
-  .column(5);
+  .sectionLayout(5);
   text-align: right;
 }
 
@@ -63,6 +67,7 @@ article.about{
 //Tour Info Page
 //===========================================================
 .tour_expanded{
+  .sectionLayout(12);
   h3{
     display: inline-block;
     width: 30%;

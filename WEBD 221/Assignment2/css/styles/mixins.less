@@ -1,0 +1,76 @@
+//Avicii: The World Tour Artist Website: Declared Mixins
+//By: Ariel Gelbard
+//Date: October 13, 2013
+
+@import: 'brand.less';
+@import: 'typography.less';
+
+//Random Box Sizing Mixin
+// -------------------------
+.box-sizing () {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:    border-box;
+  box-sizing:         border-box;
+}
+
+
+//Random Border Radius Mixin
+// -------------------------
+.border-radius (@radius: 5px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius:    @radius;
+  border-radius:         @radius;
+}
+
+
+//Common Header Mixin
+// -------------------------
+.headerLayout{
+  .column(12);
+  background-color: @blacker;
+  h1{
+    float: left;
+    margin-right:10px; 
+  }
+  ul{
+    li{
+      display: inline-block;
+      font-size: 16px;
+      padding: 8px; 
+    }
+  }
+}
+
+
+//Common Footer Mixin
+// -------------------------
+.footerLayout(){
+  .column(12);
+  background-color: @blacker;
+  color: white;
+  text-align: center;
+  p{
+    margin: 2px auto;
+  }
+  span{
+    margin: auto 5px;
+  }
+}
+
+
+//Common Section Layout Mixin
+// -------------------------
+.sectionLayout(){
+	.column(12);
+	background-color: @greyer;
+	span, time{
+		padding: 8px;
+		display: block;
+		color: @bluer;
+		font-size: @basefontsize+4;
+	}
+	a{
+		padding: 8px;
+		font-size: 14px;
+	}
+}

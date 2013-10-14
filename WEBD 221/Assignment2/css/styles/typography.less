@@ -1,0 +1,65 @@
+//Avicii: The World Tour Artist Website: Typography Style Layout
+//By: Ariel Gelbard
+//Date: October 13, 2013
+
+@import: 'brand.less';
+
+
+
+// Header Styles
+// -------------------------
+
+//All-In-One Header Style Guide Mixin
+.header-font-style(@fontsize){
+  font-family:'droid_sans_700';
+  font-size: @fontsize;
+  padding: 8px;
+}
+
+//Declared Header Styles
+h1 {
+  .header-font-style(@basefontsize + 15);
+}
+
+h2 {
+  .header-font-style(@basefontsize + 9);
+}
+
+h3 {
+  .header-font-style(@basefontsize + 5);
+}
+
+
+// Body Style
+// -------------------------
+
+body {
+  font-family: @bodyfontfamily;
+  font-size: @basefontsize;
+  line-height: @baselineheight;
+}
+
+
+//Additional Styles
+// -------------------------
+
+//CSS3 Transition Mixin
+.transitions(){
+  transition: .7s all ease-in-out;
+  -webkit-transition: .7s all ease-in-out;
+  -moz-transition: .7s all ease-in-out;
+}
+
+//Anchor Style
+a {
+  color:@whiter;
+  text-decoration: none;
+  .transitions();
+  &:hover {
+    .transitions();
+    color: @greener;
+  }
+  span{
+    color:@bluer;
+  }
+}

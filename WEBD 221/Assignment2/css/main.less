@@ -1,0 +1,82 @@
+//Avicii: The World Tour Artist Website: Main Style Sheet
+//By: Ariel Gelbard
+//Date: October 13, 2013
+
+@import 'styles/brand.less';
+@import 'styles/typography.less';
+@import 'styles/grid.less';
+@import 'styles/mixins.less';
+
+
+
+//===========================================================
+//Common Wrapper, Header, Banner, Footer Areas
+//===========================================================
+.container {
+  width: 960px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+header{
+  .headerLayout();
+}
+
+.banner,.reviews,.tour,.tour_expanded{
+  .sectionLayout();
+}
+
+footer{
+  .footerLayout();
+}
+
+
+//===========================================================
+//Home Page
+//===========================================================
+
+//Reviews Preview Section
+.reviews{
+  .column(7);
+}
+
+//Tour Preview Section
+.tour{
+  .column(5);
+  text-align: right;
+}
+
+
+//===========================================================
+//About Page
+//===========================================================
+article.about{
+  .column(12);
+  background-color: @greyer;
+  p{
+    margin: 5px;
+  }
+}
+
+
+//===========================================================
+//Tour Info Page
+//===========================================================
+.tour_expanded{
+  h3{
+    display: inline-block;
+    width: 30%;
+  }
+  span,time{
+    padding: 0 2px 0 2px;
+    font-size: @basefontsize;
+  }
+  time{
+    padding-top: 5px;
+    color: @pinker;
+  }
+  span{
+    margin-top:-2px;
+  }
+}
+//===========================================================

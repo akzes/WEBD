@@ -97,10 +97,7 @@ header ul li {
   font-size: 16px;
   padding: 8px;
 }
-.banner,
-.reviews,
-.tour,
-.tour_expanded {
+.banner {
   display: inline;
   float: left;
   width: 940px;
@@ -108,22 +105,13 @@ header ul li {
   background-color: #898989;
 }
 .banner span,
-.reviews span,
-.tour span,
-.tour_expanded span,
-.banner time,
-.reviews time,
-.tour time,
-.tour_expanded time {
+.banner time {
   padding: 8px;
   display: block;
   color: #3cbdc8;
   font-size: 17px;
 }
-.banner a,
-.reviews a,
-.tour a,
-.tour_expanded a {
+.banner a {
   padding: 8px;
   font-size: 14px;
 }
@@ -147,13 +135,37 @@ footer span {
   float: left;
   width: 540px;
   margin: 0 10px;
+  background-color: #898989;
+}
+.reviews span,
+.reviews time {
+  padding: 8px;
+  display: block;
+  color: #3cbdc8;
+  font-size: 17px;
+}
+.reviews a {
+  padding: 8px;
+  font-size: 14px;
 }
 .tour {
   display: inline;
   float: left;
   width: 380px;
   margin: 0 10px;
+  background-color: #898989;
   text-align: right;
+}
+.tour span,
+.tour time {
+  padding: 8px;
+  display: block;
+  color: #3cbdc8;
+  font-size: 17px;
+}
+.tour a {
+  padding: 8px;
+  font-size: 14px;
 }
 article.about {
   display: inline;
@@ -164,6 +176,24 @@ article.about {
 }
 article.about p {
   margin: 5px;
+}
+.tour_expanded {
+  display: inline;
+  float: left;
+  width: 940px;
+  margin: 0 10px;
+  background-color: #898989;
+}
+.tour_expanded span,
+.tour_expanded time {
+  padding: 8px;
+  display: block;
+  color: #3cbdc8;
+  font-size: 17px;
+}
+.tour_expanded a {
+  padding: 8px;
+  font-size: 14px;
 }
 .tour_expanded h3 {
   display: inline-block;

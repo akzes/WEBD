@@ -130,6 +130,12 @@ footer p {
 footer span {
   margin: auto 5px;
 }
+.container2 {
+  width: 960px;
+  overflow: hidden;
+  margin: 0 auto;
+  background-color: #898989;
+}
 .reviews {
   display: inline;
   float: left;

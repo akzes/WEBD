@@ -1,0 +1,438 @@
+@font-face {
+  font-family: 'Sintony';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Sintony'), url(http://themes.googleusercontent.com/static/fonts/sintony/v1/cu1c4tOdDXpghDFFDdv7MgLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+@font-face {
+  font-family: 'Trykker';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Trykker Regular'), local('Trykker-Regular'), url(http://themes.googleusercontent.com/static/fonts/trykker/v2/FlQv0O501FiinjeBdTunwALUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+p {
+  font-size: 1em;
+  margin-bottom: 1.5em;
+  line-height: 1.5em;
+  color: #400101;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Trykker';
+  font-weight: 700;
+  line-height: 1em;
+  text-transform: uppercase;
+  color: #731702;
+  text-align: left;
+}
+h1 {
+  font-size: 2.3em;
+}
+h2 {
+  font-size: 1.8em;
+}
+h3 {
+  font-size: 1.5em;
+}
+h4 {
+  font-size: 1.2em;
+}
+h5 {
+  font-size: 1.0em;
+}
+h6 {
+  font-size: .8em;
+}
+input {
+  font-size: 1em;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+input,
+textarea {
+  background-color: #f2d7b6;
+  border: 0 none;
+}
+ul {
+  list-style-type: none;
+  text-align: left;
+  padding: 0;
+}
+img {
+  width: 100%;
+}
+body {
+  background-color: #f2d7b6;
+  font-family: 'Sintony';
+  font-size: 1em;
+  color: #fff;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+}
+.menubutton {
+  display: none;
+  margin-top: 10px;
+  width: 10%;
+}
+.current {
+  color: #bf2011;
+  background-color: #400101;
+}
+header {
+  width: 100%;
+}
+header h1 {
+  display: block;
+  text-align: center;
+  line-height: 45px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+header nav {
+  width: 100%;
+  background-color: #bf9460;
+}
+header nav ul {
+  text-align: center;
+}
+header nav ul a {
+  display: inline-block;
+  padding: 15px 5%;
+  text-decoration: none;
+  color: black;
+  transition: 0.7s all ease-in-out;
+  -webkit-transition: 0.7s all ease-in-out;
+  -moz-transition: 0.7s all ease-in-out;
+  font-size: 1.2em;
+}
+header nav ul a:hover {
+  color: #bf2011;
+  background-color: #400101;
+  transition: 0.7s all ease-in-out;
+  -webkit-transition: 0.7s all ease-in-out;
+  -moz-transition: 0.7s all ease-in-out;
+}
+.bx-wrapper .bx-viewport,
+.bx-wrapper .bxslider {
+  border: none;
+  background: none;
+  box-shadow: none;
+}
+.bx-wrapper .bx-caption {
+  bottom: 16px;
+}
+.about h4,
+.about p {
+  text-align: left;
+}
+.about ul li {
+  margin-bottom: 10px;
+  list-style-type: circle;
+  text-align: left;
+  color: #400101;
+}
+.about ul li span {
+  font-size: 1.2em;
+}
+.about ul li:last-child {
+  margin-bottom: 30px;
+}
+#bottom {
+  background-color: #bf9460;
+  float: left;
+  width: 100%;
+  margin-bottom: 50px;
+}
+#bottom section {
+  padding: 0 1% 1% 1%;
+  width: 33.3%;
+  float: left;
+  background-color: #bf9460;
+  text-align: left;
+}
+#bottom section:last-child {
+  border-right: none;
+}
+#bottom section h3 {
+  text-align: center;
+}
+#bottom .specials ul {
+  padding: 0 20px 0 20px;
+}
+#bottom .specials ul li {
+  font-size: .8em;
+  text-align: left;
+  color: #400101;
+  margin-bottom: 20px;
+}
+#bottom .specials ul li span {
+  font-size: 1.2em;
+  color: #bf2011;
+  display: block;
+}
+#bottom .social img {
+  width: 30%;
+  margin-left: 10%;
+  float: left;
+}
+#bottom .social p {
+  padding-top: 50px;
+  clear: both;
+  text-align: center;
+}
+#bottom .social input {
+  width: 70%;
+  margin-left: 15%;
+  height: 30px;
+}
+#bottom .social input[type="submit"] {
+  margin-top: 25px;
+  width: 40%;
+  margin-left: 30%;
+}
+#bottom .reservations {
+  border: 2px black solid;
+  border-top: none;
+  border-bottom: none;
+}
+#bottom .reservations form .break {
+  display: block;
+  margin: 0 0 -15px 20px;
+}
+#bottom .reservations form p {
+  display: inline-block;
+  color: #bf2011;
+}
+#bottom .reservations form select {
+  background-color: #f2d7b6;
+  border: 0 none;
+  color: #400101;
+  font-size: .8em;
+}
+#bottom .reservations form input[type='text'] {
+  height: 25px;
+  font-size: 1em;
+}
+#bottom .reservations form input[type='submit'] {
+  margin: 5px 16.5%;
+  border-radius: 5px;
+}
+#menu section {
+  width: 100%;
+}
+#menu section h2,
+#menu section h3 {
+  text-align: left;
+  margin: 20px 0 -10px 0;
+  padding: 0;
+}
+#menu section h2 {
+  margin: 50px 0 0 0;
+}
+#menu section ul {
+  width: 100%;
+  margin: 0;
+}
+#menu section ul li {
+  width: 30%;
+  margin-left: 2%;
+  display: inline-block;
+  color: #bf2011;
+  text-align: left;
+  margin-top: 20px;
+}
+#menu section ul li h5,
+#menu section ul li span {
+  color: #bf2011;
+  font-family: 'Sintony';
+  margin: 10px 0 0 0;
+  width: 81%;
+  display: inline-block;
+}
+#menu section ul li span {
+  margin: 0;
+  width: 15%;
+}
+#menu section ul li p {
+  margin: 0;
+  padding: 0;
+  font-size: .8em;
+  width: 90%;
+}
+#menu section ul li img {
+  display: block;
+  border-radius: 10px;
+}
+#menu section:last-child {
+  margin-bottom: 50px;
+}
+#contact_info {
+  width: 75%;
+  float: left;
+}
+#contact_info section {
+  margin-top: 20px;
+  width: 50%;
+  float: left;
+}
+#contact_info h2 {
+  margin: 50px 0 50px 0;
+}
+#contact_info h2,
+#contact_info h3,
+#contact_info h4,
+#contact_info h6,
+#contact_info ul,
+#contact_info li {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+#contact_info h6 {
+  margin: 10px 0 2px 0;
+}
+#contact_info ul {
+  color: #bf2011;
+}
+#contact_info ul li {
+  font-size: .8em;
+}
+#contact_form {
+  float: right;
+  background-color: #bf9460;
+  width: 25%;
+  text-align: left;
+  padding-left: 10px;
+}
+#contact_form h2 {
+  text-align: center;
+}
+#contact_form label {
+  color: #731702;
+  display: block;
+  margin-top: 10px;
+}
+#contact_form .formgroup,
+#contact_form input[type="submit"] {
+  margin-left: 5px;
+}
+#contact_form input[type="submit"] {
+  margin-bottom: 15px;
+}
+footer {
+  position: relative;
+  overflow: hidden;
+  clear: both;
+  width: 100%;
+  background-color: #bf9460;
+}
+footer a {
+  position: absolute;
+  width: 5%;
+  right: 0;
+}
+footer a:first-child {
+  right: 5%;
+}
+footer p {
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 768px) {
+  header nav ul a {
+    padding: 15px 4%;
+  }
+  #bottom .reservations form p {
+    margin-bottom: 8px;
+  }
+  #bottom .reservations form input[type='submit'] {
+    margin-top: 30px;
+  }
+  #contact_info {
+    width: 70%;
+    margin-bottom: 50px;
+  }
+  #contact_info section {
+    float: none;
+  }
+  #contact_form {
+    width: 30%;
+  }
+}
+@media (max-width: 500px) {
+  .bx-wrapper .bx-caption {
+    font-size: .8em;
+  }
+  .bx-wrapper .bx-caption span {
+    padding: 2px 8px;
+  }
+  .about h4 {
+    text-align: center;
+  }
+  .menubutton {
+    display: inherit;
+  }
+  nav {
+    display: none;
+  }
+  nav ul a {
+    width: 100%;
+    padding: 0;
+  }
+  #bottom {
+    background-color: transparent;
+  }
+  #bottom section {
+    width: 100%;
+    float: none;
+    margin-bottom: 20px;
+    padding-top: 2px;
+    background-color: #bf9460;
+  }
+  #bottom section:last-child {
+    margin-bottom: none;
+  }
+  #bottom .reservations {
+    border: none;
+  }
+  #menu section ul li {
+    width: 100%;
+  }
+  #menu section ul li h5 {
+    width: 78%;
+  }
+  #contact_info {
+    float: none;
+    width: 100%;
+    margin-bottom: 0;
+  }
+  #contact_info h2 {
+    margin-top: 20px;
+  }
+  #contact_info section {
+    width: 100%;
+  }
+  #contact_form {
+    margin: 50px 0 50px 0;
+    width: 80%;
+    float: left;
+  }
+  footer a {
+    position: relative;
+    width: 20%;
+    display: inline-block;
+  }
+  footer p {
+    font-size: .8em;
+  }
+}

@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'Sintony';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Sintony'), url(http://themes.googleusercontent.com/static/fonts/sintony/v1/cu1c4tOdDXpghDFFDdv7MgLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+@font-face {
+  font-family: 'Trykker';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Trykker Regular'), local('Trykker-Regular'), url(http://themes.googleusercontent.com/static/fonts/trykker/v2/FlQv0O501FiinjeBdTunwALUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+p {
+  font-size: 1em;
+  margin-bottom: 1.5em;
+  line-height: 1.5em;
+  color: #400101;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Trykker';
+  font-weight: 700;
+  line-height: 1em;
+  text-transform: uppercase;
+  color: #731702;
+  text-align: left;
+}
+h1 {
+  font-size: 2.3em;
+}
+h2 {
+  font-size: 1.8em;
+}
+h3 {
+  font-size: 1.5em;
+}
+h4 {
+  font-size: 1.2em;
+}
+h5 {
+  font-size: 1.0em;
+}
+h6 {
+  font-size: .8em;
+}
+input {
+  font-size: 1em;
+}

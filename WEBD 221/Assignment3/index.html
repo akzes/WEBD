@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<!-- 
+Assignment #3: Mambo Italiano's Restaurante HTML
+By: Ariel Gelbard
+Date: Monday, November 11, 2013
+-->
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Mambo Italiano's Restaurante</title>
+		<meta name="author" content="Ariel Gelbard">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="images/favicon.png"> 
+		<link rel="apple-itouch-icon" href="images/favicon.png">
+		
+		<!-- Javascript Files -->
+		<script src="js/jquery.1.10.2.js"></script>
+		<script src="js/jquery.bxslider.min.js"></script>
+
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="styles/reset.css" type="text/css" media="screen" />
+		<link href="styles/jquery.bxslider.css" rel="stylesheet" />
+		<link rel="stylesheet" href="styles/main.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="styles/print.css" type="text/css" media="print" >
+
+		<!-- JS Declarations -->
+		<script>
+		$(document).ready(function(){
+		  $('.bxslider').bxSlider({
+		  	auto: true,mode: 'fade',captions: true
+		  });
+		});
+		$(document).ready(function(){
+		  $(".menubutton").click(function(){
+		    $("nav").slideToggle();
+		  });
+		});
+		</script>
+	</head>
+	<body>
+		<div class='container'>
+			<header>
+			<h1>Mambo Italiano's Restaurante</h1>
+			<div class="menubutton">
+       			<img src="images/menu.svg">
+      		</div>
+      		
+      		<!-- NAVIGATION AREA -->
+			<nav>
+				<ul>
+					<a href="index.html" class='current'><li>Home</li></a>
+					<a href="menu.html"><li>Menu</li></a>
+					<a href="#"><li>News</li></a>
+					<a href="#bottom"><li>Reservations</li></a>
+					<a href="contact.html"><li>Contact Us</li></a>
+				</ul>
+			</nav>
+			</header>
+			<!-- MAIN CONTENT -->
+			<div id="maincontent">
+				<!-- BANNER / SLIDER -->
+				<div class='banner'>
+					<ul class="bxslider">
+					  <li>
+					  	<img src="images/banner/etobicoke.jpg" title="Enjoy your meal outdoors at our Etobicoke location"/>
+					  </li>
+					  <li>
+					  	<img src="images/banner/dundas.jpg" title="Our amazing decore at our dundas location will make you feel right at home"/>
+					  </li>
+					  <li>
+					  	<img src="images/banner/yorkdale.jpg" title="Book now to reserve a spot for our christmas location"/>
+					  </li>
+					</ul>					
+				</div>
+				<!-- ABOUT RESTRAUNT CONTENT -->
+				<div class='about'>
+					<h4>About Our Restraunts</h4>
+					<ul>
+						<li>A 900 Degree Wood oven <span>at most 2 minutes to cook a pizza!</span></li>
+						<li>All ingredients are imported from Italy</li>
+						<li>Freshly made with our superstar hand tossing pizza chefs</li>
+					</ul>
+				</div>
+
+				<!-- BOTTOM HALF OF HOME PAGE -->
+				<div id='bottom'>
+
+					<!-- SPECIALS OF THE WEEK -->
+					<section class='specials'>
+						<h3>Weekly Specials</h3>
+						<ul>
+							<li><span>Pizza Special</span>All pizzas are all for $8.99! Don't miss it!</li>
+							<li><span>Pasta Special</span>Rigitoni stuffed with duck</li>
+							<li><span>Dessert Special</span>Cream Caramel with toffee and choclate ice cream</li>
+						</ul>
+					</section>
+
+					<!-- RESERVATIONS AREA -->
+					<section class='reservations'>
+						<h3>Make a Reservation</h3>
+						<form>
+							<div class='break'>
+								<p>Location</p>
+					            <select class='home_list'>
+						            <option value = "1">Dundas Square</option>
+						            <option value = "2">Etobicoke</option>
+						            <option value = "3">Yorkdale</option>
+					            </select>	
+				            </div>	
+				            <div class='break'>				
+								<p>Date</p>
+					            <select class='home_list'>
+						            <option value = "1">September 1</option>
+						            <option value = "2">September 2</option>
+						            <option value = "3">September 3</option>
+						            <option value = "4">September 4</option>
+						            <option value = "5">September 5</option>
+						            <option value = "6">September 6</option>
+						            <option value = "7">September 7</option>
+						            <option value = "8">September 8</option>
+					            </select>
+				            </div>	
+				            <div class='break'>
+					          	<p>Time</p>
+						            <select class='home_list'>
+							            <option value = "1">1</option>
+							            <option value = "2">2</option>
+							            <option value = "3">3</option>
+							            <option value = "4">4</option>
+							            <option value = "5">5</option>
+							            <option value = "6">6</option>
+							            <option value = "7">7</option>
+							            <option value = "8">8</option>
+							            <option value = "9">9</option>
+							            <option value = "10">10</option>
+							            <option value = "11">11</option>
+							            <option value = "12">12</option>
+						            </select>
+						            <select class='home_list'>
+							            <option value = "1">AM</option>
+							            <option value = "2">PM</option>
+						            </select>		
+						    </div>			      			
+					        <div class='break'>          	
+					          	<p>People</p>
+						            <select class='home_list'>
+							            <option value = "1">1 Person</option>
+							            <option value = "2">2 People</option>
+							            <option value = "3">3 People</option>
+							            <option value = "4">4 People</option>
+							            <option value = "5">5 People</option>
+							            <option value = "6">6 People</option>
+							            <option value = "7">7 People</option>
+							            <option value = "8">8 People</option>
+							            <option value = "9">9 People</option>
+							            <option value = "10">10 People</option>
+							            <option value = "11">11 Person</option>
+							            <option value = "12">12 People</option>
+							            <option value = "13">13 People</option>
+							            <option value = "14">14 People</option>
+							            <option value = "15">15 People</option>
+							            <option value = "16">16 People</option>
+							            <option value = "17">17 People</option>
+							            <option value = "18">18 People</option>
+							            <option value = "19">19 People</option>
+							            <option value = "20">20 People</option>
+						            </select>
+					            </div>	
+					            <div class='break'>
+						            <p>Name</p>
+						            <input type="text">
+						        </div>	
+						        <div class='break'>
+							        <p>Phone</p>
+							        <input type="text">
+								</div>	
+					            <input type="submit" value='Reserve your Spot!'>				          
+					    </form>
+					</section>
+
+					<!-- SOCIAL MEDIA AREA -->
+					<section class='social'>
+						<h3>Follow Us!</h3>
+						<a href="facebook.com"><img src="images/facebook.svg" /></a>
+						<a href="twitter.com"><img src="images/twitter.svg" /></a>
+						<p>Sign Up for our newsletters</p>
+						<input type="text" placeholder="Email">
+					    <input type="submit" value='Sign Up'>						
+					</section>
+				</div>				
+			</div>
+
+			<!-- FOOTER -->
+			<footer>
+				<a href="http://facebook.com"><img src="images/facebook.svg" /></a>
+				<a href="http://twitter.com"><img src="images/twitter.svg" /></a>
+				<p>Copyright Mambo Italiano's Pizzeria 2013</p>
+				<p>Site Designed and Developed by Ariel Gelbard 2013</p>
+			</footer>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!-- 
+Assignment #3: Mambo Italiano's Restaurante HTML
+By: Ariel Gelbard
+Date: Monday, November 11, 2013
+-->
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Mambo Italiano's Restaurante</title>
+		<meta name="author" content="Ariel Gelbard">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="images/favicon.png"> 
+		<link rel="apple-itouch-icon" href="images/favicon.png">
+
+		<!-- Javascript Files -->
+		<script src="js/jquery.1.10.2.js"></script>
+
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="styles/reset.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="styles/main.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="styles/print.css" type="text/css" media="print" >
+
+		<!-- JS Declarations -->
+		<script>
+		$(document).ready(function(){
+		  $(".menubutton").click(function(){
+		    $("nav").slideToggle();
+		  });
+		});
+		</script>
+
+	</head>
+	<body>
+		<div class='container'>
+			<header>
+			<h1>Mambo Italiano's Restaurante</h1>
+			<div class="menubutton">
+       			<img src="images/menu.svg">
+      		</div>
+
+      		<!-- NAVIGATION AREA -->
+			<nav>
+				<ul>
+					<a href="index.html"><li>Home</li></a>
+					<a href="menu.html"><li>Menu</li></a>
+					<a href="#"><li>News</li></a>
+					<a href="index.html#bottom"><li>Reservations</li></a>
+					<a href="contact.html"  class='current'><li>Contact Us</li></a>
+				</ul>
+			</nav>
+			</header>
+
+			<!-- CONTACT INFORMATION CONTENT -->
+			<div id='contact_info'>
+				<h2>Locations</h2>
+				<section class='location'>
+					<h3>Dundas Square</h3>
+					<ul>
+						<li>11 Yonge Street</li>
+						<li>Toronto, Ontario</li>
+						<li>L4F 3R3</li>
+						<li>(416) 123-1234</li>
+					</ul>
+					<h6>Hours</h6>
+					<ul>
+						<li>Monday to Friday: 10am to 11pm</li>
+						<li>Saturday: 8am to 11:59pm</li>
+						<li>Sunday: 11:59am to 9pm</li>
+					</ul>
+				</section>
+				<section class='location'>
+					<h3>Yorkdale</h3>
+					<ul>
+						<li>11 Yonge Street</li>
+						<li>Toronto, Ontario</li>
+						<li>L4F 3R3</li>
+						<li>(416) 123-1234</li>
+					</ul>
+					<h6>Hours</h6>
+					<ul>
+						<li>Monday to Friday: 10am to 11pm</li>
+						<li>Saturday: 8am to 11:59pm</li>
+						<li>Sunday: 11:59am to 9pm</li>
+					</ul>
+				</section>
+				<section class='location'>
+					<h3>Etobicoke</h3>
+					<ul>
+						<li>11 Yonge Street</li>
+						<li>Toronto, Ontario</li>
+						<li>L4F 3R3</li>
+						<li>(416) 123-1234</li>
+					</ul>
+					<h6>Hours</h6>
+					<ul>
+						<li>Monday to Friday: 10am to 11pm</li>
+						<li>Saturday: 8am to 11:59pm</li>
+						<li>Sunday: 11:59am to 9pm</li>
+					</ul>
+				</section>
+
+			</div>
+
+			<!-- CONTACT FORM CONTENT -->
+			<div id="contact_form">
+			<h2>Contact Us</h2>
+            	<form>
+            	<div class="formgroup">
+            		<label>Name</label>
+            		<input type="text" name="firstname" />
+          		</div>
+            	<div class="formgroup">
+            		<label>Phone</label>
+            		<input type="text" name="phone" />
+          		</div>
+            	<div class="formgroup">
+            		<label>Email</label>
+            		<input type="text" name="email" />
+          		</div>
+            	<div class="formgroup">
+            		<label>Message</label>
+            		<textarea name="comments" maxlength="1000" cols="25" rows="6" ></textarea>
+          		</div>
+          		<input type="submit" value='Submit'>
+				</form>
+			</div>
+
+			<!-- FOOTER -->
+			<footer>
+				<a href="http://facebook.com"><img src="images/facebook.svg" /></a>
+				<a href="http://twitter.com"><img src="images/twitter.svg" /></a>
+				<p>Copyright Mambo Italiano's Pizzeria 2013</p>
+				<p>Site Designed and Developed by Ariel Gelbard 2013</p>
+			</footer>
+		</div>
+
+	</body>
+</html>

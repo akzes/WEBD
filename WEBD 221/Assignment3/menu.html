@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!-- 
+Assignment #3: Mambo Italiano's Restaurante HTML
+By: Ariel Gelbard
+Date: Monday, November 11, 2013
+-->
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Mambo Italiano's Restaurante</title>
+		<meta name="author" content="Ariel Gelbard">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="images/favicon.png"> 
+		<link rel="apple-itouch-icon" href="images/favicon.png">
+
+		<!-- Javascript Files -->
+		<script src="js/jquery.1.10.2.js"></script>
+		
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="styles/reset.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="styles/main.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="styles/print.css" type="text/css" media="print" >
+
+		<!-- JS Declarations -->
+		<script>
+		$(document).ready(function(){
+		  $(".menubutton").click(function(){
+		    $("nav").slideToggle();
+		  });
+		});
+		</script>
+
+	</head>
+	<body>
+
+		<div class='container'>
+			<header>
+			<h1>Mambo Italiano's Restaurante</h1>
+			<div class="menubutton">
+       			<img src="images/menu.svg">
+      		</div>
+
+      		<!-- NAVIGATION AREA -->
+			<nav>
+				<ul>
+					<a href="index.html"><li>Home</li></a>
+					<a href="menu.html" class='current'><li>Menu</li></a>
+					<a href="#"><li>News</li></a>
+					<a href="index.html#bottom"><li>Reservations</li></a>
+					<a href="contact.html"><li>Contact Us</li></a>
+				</ul>
+			</nav>
+			</header>
+
+			<!-- MENU CONTENT -->
+			<div id="menu">
+				<section>
+				<h2>Appetizers</h2>
+				<ul>
+					<li>
+						<img src="images/menu/caesar.jpg"><h5>Ceasar Salad</h5>
+						<span>$5.99</span>
+						<p>Romain Lettuce, Bacon Bits, Cruttons and our secret dressing</p>
+					</li>
+					<li>
+						<img src="images/menu/antipasto.jpg" alt="Smiley face">
+						<h5>Antipasto</h5>
+						<span>$5.99</span>
+						<p>salami, procolone, cheese, ham, prosciutto, and fresh mozzarella</p>
+					</li>
+					<li>
+						<img src="images/menu/bruschetta.jpg">
+						<h5>Bruschetta</h5>
+						<span>$4.99</span>
+						<p>tomatos, garlic, basil and a touch of mozzarella</p>
+					</li>
+				</ul>
+				</section>
+				<section>
+					<h2>The Main Course</h2>
+					<h3>Pastas</h3>
+					<ul>
+						<li>
+							<img src="images/menu/spagettibean.jpg" alt="Smiley face">
+							<h5>Spagetti with Beans</h5>
+							<span>$7.99</span>
+							<p>beans, basil, topped with cheese and alfredo sauce</p>
+						</li>
+						<li>
+							<img src="images/menu/spagetti.jpg" alt="Smiley face">
+							<h5>Spagetti Salad</h5>
+							<span>$6.99</span>
+							<p>mixed greens, tomatoes, olives and other additions at your request</p>
+						</li>
+						<li>
+							<img src="images/menu/penne.jpg" alt="Smiley face">
+							<h5>Vegitarian Penne Pasta</h5>
+							<span>$9.99</span>
+							<p>garlic, basil, olives, tomatos and olive oil</p>
+						</li>
+						<li>
+							<img src="images/menu/pennepasta.jpg" alt="Smiley face">
+							<h5>Pescatore Penne Pasta</h5>
+							<span>$11.99</span>
+							<p>mixed seafood such as shrimp, scalops, and tuna fish with our special white sauce</p>
+						</li>
+					</ul>
+					<h3>Pizzas</h3>
+					<ul>
+						<li>
+							<img src="images/menu/pizza3.jpg" alt="Smiley face">
+							<h5>Pesto Pizza</h5>
+							<span>$9.99</span>
+							<p>pesto, guetta cheese, tomato sauce, mushrooms</p>
+						</li>
+						<li>
+							<img src="images/menu/pizza1.jpg" alt="Smiley face">
+							<h5>Pescatore Pizza</h5>
+							<span>$10.99</span>
+							<p>jalepeno, peperoni, ham, mozzerella cheese, tomato sauce</p>
+						</li>
+						<li>
+							<img src="images/menu/pizza2.jpg" alt="Smiley face">
+							<h5>Vegitarian Pasta</h5>
+							<span>$9.99</span>
+							<p>tomatoes, mushrooms, olives, mozzerella cheese, tomato sauce</p>
+						</li>
+						<li>
+							<img src="images/menu/custompizza.jpg" alt="Smiley face">
+							<h5>Custom Pizza with any toppings</h5>
+							<span>$11.99</span>
+							<p>green pepper, onion, pinapple, ham and pepporoni</p>
+						</li>						
+					</ul>
+				</section>
+				<section>
+					<h2>Desserts</h2>
+					<ul>
+						<li>
+							<img src="images/menu/icecream.jpg">
+							<h5>Ice Cream & Sorbets</h5>
+							<span>$2.99</span>
+							<p>choclate, vanilla, strawberry, rasberry and green tea</p>
+						</li>
+					</ul>
+				</section>
+			</div>
+
+			<!-- FOOTER -->
+			<footer>
+				<a href="http://facebook.com"><img src="images/facebook.svg" /></a>
+				<a href="http://twitter.com"><img src="images/twitter.svg" /></a>
+				<p>Copyright Mambo Italiano's Pizzeria 2013</p>
+				<p>Site Designed and Developed by Ariel Gelbard 2013</p>
+			</footer>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,187 @@
+// Style Sheet: Style Guide Outline Declerations LESS/CSS
+
+// Integrative Assignment: Not Far From the Tree Client
+// By: Ariel Gelbard & Andres Hernandez
+// Date: Tuesday, December 10, 2013
+
+
+
+//=================================================================
+//=================================================================
+//FONT STYLE DECLERATIONS
+
+.fontsDec(@first,@second,@third){
+    @font-face {
+        font-family: @first;//socialicoregular';
+        src: url('../fonts/@{second}-webfont.eot');
+        src: url('../fonts/@{second}-webfont.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/@{second}-webfont.woff') format('woff'),
+             url('../fonts/@{second}-webfont.ttf') format('truetype'),
+             url('../fonts/@{second}-webfont.svg#@{third}') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+}
+
+.fontsDec('aleo','aleo-regular','aleoregular');
+.fontsDec('aleobold','aleo-bold','aleobold');
+.fontsDec('sabado','sabado_regular','sabadoregular');
+.fontsDec('scienceFair','science_fair','science_fairregular');
+.fontsDec('telegraphic','telegrafico','telegraficoregular');
+
+
+
+//=================================================================
+//=================================================================
+//VARIABLE STYLE DECLERATIONS
+
+@blue:#2c3373;
+@buttonRed:#ea4b50;
+@buttonGreen:#c1d564;
+@green:#bed35e;
+@grey:#b3b3b7;
+@white:#fff;
+@black:#000;
+
+//=================================================================
+//=================================================================
+//GENERAL MIXIN DECLERATIONS
+.smoothTrans(@sec){
+  transition: @sec all ease-in-out;
+  -webkit-transition: @sec all ease-in-out;
+  -moz-transition: @sec all ease-in-out;
+}
+.scaleTrans(@value1,@value2){
+    transform:scale(@value1,@value2);
+    -webkit-transform:scale(@value1,@value2);
+}
+
+.boxModel(@wid,@left){
+    width: @wid;
+    margin-left:@left;
+}
+
+.buttonTemplate(@wid,@fontSize){
+    font-family:'scienceFair', Arial, sans-serif;
+    font-size:@fontSize;
+    border-radius: 5px;
+    background-color: @buttonRed;
+    text-align: center;
+    width: @wid;
+    padding: 2% 0;
+}
+
+//=================================================================
+//=================================================================
+//GENERAL STYLE DECLERATIONS
+
+body{
+    font-size: 1em;
+}
+
+h1{
+    display: none;
+}
+
+h2{
+    color: @blue;
+    font-family: 'telegraphic', Arial, sans-serif;
+    font-size: 3.75em;
+    text-align: center;    
+}
+
+p{
+    font-family: 'aleo', Arial, sans-serif;
+    font-size: 1.5em;   
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.8em;
+    color: @black;
+}
+
+//=================================================================
+//=================================================================
+//FOOTER STYLE DECLERATIONS
+
+footer{
+    a,p{
+        font-size: 1.5em;
+        font-family: 'scienceFair', Arial, sans-serif;
+        color: @white;     
+    }
+}
+
+//=================================================================
+//=================================================================
+//FORM STYLE DECLERATIONS
+
+form{
+    font-size: 1.2em;
+    font-family: 'scienceFair', Arial, sans-serif;
+    background-color: @grey;
+    color: @blue;
+    span{
+        color: red;
+        font-size: .7em;
+    }
+    input[type='text'], input[type='email'], input[type='tel']{
+        border: 2px solid @blue;
+        font-size: 1.8em;
+    }
+    input[type='checkbox']{
+        width: 40px;
+        height: 40px;
+        appearance:none;
+        -webkit-appearance:none;
+        background-color: @white;
+        border: 2px solid @blue;
+        &:checked{
+            background-color: @green;
+        }
+        &:checked:after {
+            content: '\2714';
+            font-size: 3.3em;
+            margin-left: 3px;
+        }
+    }
+    input[type='submit']{
+        border: none;
+        font-size: 1.5em;
+        font-family: 'scienceFair', Arial, sans-serif;
+        background-color: @green;
+    }
+
+    h6{
+        font-size: 1.3em;
+    }
+    label{
+         color: @blue;
+    }
+    .ways,.available{
+        label{
+            .label{
+                color: @white;
+            }
+        }
+    }
+}
+
+//Jquery Classes
+.required,.custom-error-message,#parsley-waysInvolved,#parsley-ava{
+    color: red;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a{
+    .smoothTrans(1s);
+}
+
+.bx-wrapper .bx-viewport{
+    background: none;
+    box-shadow:none;
+}

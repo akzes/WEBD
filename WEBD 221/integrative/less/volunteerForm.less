@@ -1,0 +1,104 @@
+// Style Sheet: Volunteer Registration Page LESS/CSS
+
+// Integrative Assignment: Not Far From the Tree Client
+// By: Ariel Gelbard & Andres Hernandez
+// Date: Tuesday, December 10, 2013
+
+
+@import 'style.less';
+
+
+//=================================================================
+//VOLUNTEER REGISTRATION
+
+//Info Area
+.getting_involved_main{
+    overflow: inherit;
+}
+
+//Mixin for Form Style
+.form_mix(@wid){
+    label{
+        display: inline-block;
+        width: @wid;
+        margin-bottom: 15px;
+        margin-right: 10px;
+        input[type='text'], input[type='email']{
+            width: 100%;
+        }
+        .label{
+           display: inline-block;
+        }
+    }
+    h6{
+        margin-bottom: 10px;
+    }
+}
+
+form{
+    width: 100%;
+    margin-top: -3px;
+     .main_info,.ways,.available,.phone,.liability{
+        .boxModel(90%,4.5%);
+        padding-top: 15px;
+        .form_mix(48%);
+     }
+     //First,Last Name, Email, Affiliations
+     .main_info{
+        label{
+            .label{
+                display: inherit;
+            }
+        }
+     }
+     .ways,.available{ //Availability Area
+        label{
+            padding: 22px 0;
+            background-color: @blue;
+            &:first-child{
+                margin-left: 0;
+            }
+            input[type='checkbox']{
+                margin-left: 5%;
+            }
+        }
+    }
+    .phone{ //Phone Number Area
+        .sec{
+            width: 100%;
+            label{
+                display: inline-block;
+                .boxModel(30%,3%);
+                .label{
+                    margin-right: 3%;
+                }
+                input[type='text']{
+                   display: inline-block;
+                   width: 50%;
+                }
+            }
+        }
+    }
+    .liability{ //Agree to Terms and Conditions
+        p{
+            margin: 20px 0 0 0;
+            font-size: 1.3em;
+        }
+        label{
+            .boxModel(100%,30px);
+            margin-top: 30px;
+            display: block;
+            .label{
+                font-size: 1.3em;
+            }
+        }
+    }
+   
+    input[type='submit']{
+        margin: 50px 0 30px 0;
+        padding: 15px 0;
+        border-radius: 5px;
+        font-size: 1.8em;
+        .boxModel(50%,25%);
+    }
+}

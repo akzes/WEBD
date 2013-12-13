@@ -1,0 +1,882 @@
+/*
+Style Sheet: Main Style Sheet & Media Queries LESS/CSS
+
+Integrative Assignment: Not Far From the Tree Client
+By: Ariel Gelbard & Andres Hernandez
+Date: Tuesday, December 10, 2013
+*/
+@font-face {
+  font-family: 'aleo';
+  src: url('../fonts/aleo-regular-webfont.eot');
+  src: url('../fonts/aleo-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/aleo-regular-webfont.woff') format('woff'), url('../fonts/aleo-regular-webfont.ttf') format('truetype'), url('../fonts/aleo-regular-webfont.svg#aleoregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'aleobold';
+  src: url('../fonts/aleo-bold-webfont.eot');
+  src: url('../fonts/aleo-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/aleo-bold-webfont.woff') format('woff'), url('../fonts/aleo-bold-webfont.ttf') format('truetype'), url('../fonts/aleo-bold-webfont.svg#aleobold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'sabado';
+  src: url('../fonts/sabado_regular-webfont.eot');
+  src: url('../fonts/sabado_regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/sabado_regular-webfont.woff') format('woff'), url('../fonts/sabado_regular-webfont.ttf') format('truetype'), url('../fonts/sabado_regular-webfont.svg#sabadoregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'scienceFair';
+  src: url('../fonts/science_fair-webfont.eot');
+  src: url('../fonts/science_fair-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/science_fair-webfont.woff') format('woff'), url('../fonts/science_fair-webfont.ttf') format('truetype'), url('../fonts/science_fair-webfont.svg#science_fairregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'telegraphic';
+  src: url('../fonts/telegrafico-webfont.eot');
+  src: url('../fonts/telegrafico-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/telegrafico-webfont.woff') format('woff'), url('../fonts/telegrafico-webfont.ttf') format('truetype'), url('../fonts/telegrafico-webfont.svg#telegraficoregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-size: 1em;
+}
+h1 {
+  display: none;
+}
+h2 {
+  color: #2c3373;
+  font-family: 'telegraphic', Arial, sans-serif;
+  font-size: 3.75em;
+  text-align: center;
+}
+p {
+  font-family: 'aleo', Arial, sans-serif;
+  font-size: 1.5em;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  font-size: 1.8em;
+  color: #000000;
+}
+footer a,
+footer p {
+  font-size: 1.5em;
+  font-family: 'scienceFair', Arial, sans-serif;
+  color: #ffffff;
+}
+form {
+  font-size: 1.2em;
+  font-family: 'scienceFair', Arial, sans-serif;
+  background-color: #b3b3b7;
+  color: #2c3373;
+}
+form span {
+  color: red;
+  font-size: .7em;
+}
+form input[type='text'],
+form input[type='email'],
+form input[type='tel'] {
+  border: 2px solid #2c3373;
+  font-size: 1.8em;
+}
+form input[type='checkbox'] {
+  width: 40px;
+  height: 40px;
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: #ffffff;
+  border: 2px solid #2c3373;
+}
+form input[type='checkbox']:checked {
+  background-color: #bed35e;
+}
+form input[type='checkbox']:checked:after {
+  content: '\2714';
+  font-size: 3.3em;
+  margin-left: 3px;
+}
+form input[type='submit'] {
+  border: none;
+  font-size: 1.5em;
+  font-family: 'scienceFair', Arial, sans-serif;
+  background-color: #bed35e;
+}
+form h6 {
+  font-size: 1.3em;
+}
+form label {
+  color: #2c3373;
+}
+form .ways label .label,
+form .available label .label {
+  color: #ffffff;
+}
+.required,
+.custom-error-message,
+#parsley-waysInvolved,
+#parsley-ava {
+  color: red;
+}
+.bx-wrapper .bx-pager.bx-default-pager a {
+  transition: 1s all ease-in-out;
+  -webkit-transition: 1s all ease-in-out;
+  -moz-transition: 1s all ease-in-out;
+}
+.bx-wrapper .bx-viewport {
+  background: none;
+  box-shadow: none;
+}
+header {
+  float: left;
+  width: 100%;
+  background-image: url('../assets/headerapples.png');
+}
+header .menu {
+  display: none;
+  width: 32%;
+}
+header .logo {
+  float: left;
+  width: 30%;
+  margin-left: 20px;
+}
+header .logo img {
+  margin-top: 5%;
+  width: 80%;
+}
+header .top_donate {
+  float: right;
+  margin-top: 20px;
+  margin-right: 15px;
+}
+header .top_donate a {
+  opacity: .8;
+  transition: 0.7s all ease-in-out;
+  -webkit-transition: 0.7s all ease-in-out;
+  -moz-transition: 0.7s all ease-in-out;
+  font-family: 'scienceFair', Arial, sans-serif;
+  font-size: 2.5em;
+  border-radius: 5px;
+  background-color: #ea4b50;
+  text-align: center;
+  width: 15%;
+  padding: 2% 0;
+  padding: 5px 15px;
+  color: white;
+}
+header .top_donate a:hover {
+  transition: 0.7s all ease-in-out;
+  -webkit-transition: 0.7s all ease-in-out;
+  -moz-transition: 0.7s all ease-in-out;
+  opacity: 1;
+}
+nav {
+  clear: both;
+  background-color: #2c3373;
+  width: 100%;
+  padding: 5px 0 5px 0;
+}
+nav ul {
+  width: 100%;
+  margin: 0 auto;
+  display: inline-block;
+}
+nav ul a {
+  transition: 0.7s all ease-in-out;
+  -webkit-transition: 0.7s all ease-in-out;
+  -moz-transition: 0.7s all ease-in-out;
+  width: 19%;
+  display: inline-block;
+  color: #c1d564;
+}
+nav ul a:hover {
+  transition: 0.7s all ease-in-out;
+  -webkit-transition: 0.7s all ease-in-out;
+  -moz-transition: 0.7s all ease-in-out;
+  color: white;
+}
+nav ul a li {
+  font-family: 'sabado', Arial, sans-serif;
+  text-align: center;
+}
+nav .current_page {
+  color: #ffffff;
+}
+footer {
+  width: 100%;
+  background-color: #2c3373;
+  padding: 10px 0;
+  overflow: auto;
+  clear: both;
+}
+footer .siteMap {
+  float: left;
+  width: 20%;
+  margin-top: 10px;
+}
+footer .siteMap a {
+  float: left;
+  margin-left: 5px;
+  transition: 0.7s all ease-in-out;
+  -webkit-transition: 0.7s all ease-in-out;
+  -moz-transition: 0.7s all ease-in-out;
+}
+footer .siteMap a:hover {
+  transition: 0.7s all ease-in-out;
+  -webkit-transition: 0.7s all ease-in-out;
+  -moz-transition: 0.7s all ease-in-out;
+  color: #bed35e;
+}
+footer .copywright {
+  float: left;
+  width: 60%;
+}
+footer .copywright p {
+  margin-top: 10px;
+  color: #bed35e;
+  text-align: center;
+}
+footer a.fa {
+  float: right;
+  height: 40px;
+  background-image: url('../assets/facebookFooter.png');
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  margin: 5px -5px 0 0;
+  margin-right: -5px;
+  width: 40px;
+  transition: 0.7s all ease-in-out;
+  -webkit-transition: 0.7s all ease-in-out;
+  -moz-transition: 0.7s all ease-in-out;
+}
+footer a.fa:hover {
+  background-image: url('../assets/facebookFooterHover.png');
+  transform: scale(1.03, 1.02);
+  -webkit-transform: scale(1.03, 1.02);
+  transition: 0.7s all ease-in-out;
+  -webkit-transition: 0.7s all ease-in-out;
+  -moz-transition: 0.7s all ease-in-out;
+}
+footer a.tw {
+  float: right;
+  height: 40px;
+  background-image: url('../assets/twitterFooter.png');
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  margin: 8px -5px 0 0;
+  margin-right: -5px;
+  width: 50px;
+  transition: 0.7s all ease-in-out;
+  -webkit-transition: 0.7s all ease-in-out;
+  -moz-transition: 0.7s all ease-in-out;
+}
+footer a.tw:hover {
+  background-image: url('../assets/twitterFooterHover.png');
+  transform: scale(1.03, 1.02);
+  -webkit-transform: scale(1.03, 1.02);
+  transition: 0.7s all ease-in-out;
+  -webkit-transition: 0.7s all ease-in-out;
+  -moz-transition: 0.7s all ease-in-out;
+}
+.about {
+  overflow: auto;
+  padding: 30px 0 0 0;
+  width: 100%;
+  clear: both;
+}
+.about .blurb_area {
+  float: left;
+  width: 48%;
+}
+.about .blurb_area h2 {
+  margin-bottom: 20px;
+}
+.about .blurb_area p {
+  width: 90%;
+  margin: 0 auto 40px auto;
+}
+.about .blurb_area .learn {
+  font-family: 'aleobold', Arial, sans-serif;
+  float: right;
+  color: #2c3373;
+  transition: 0.4s all ease-in-out;
+  -webkit-transition: 0.4s all ease-in-out;
+  -moz-transition: 0.4s all ease-in-out;
+}
+.about .blurb_area .learn:hover {
+  transition: 0.4s all ease-in-out;
+  -webkit-transition: 0.4s all ease-in-out;
+  -moz-transition: 0.4s all ease-in-out;
+  color: #c1d564;
+}
+.about .blurb_area a.blurb_button {
+  transition: 0.4s all ease-in-out;
+  -webkit-transition: 0.4s all ease-in-out;
+  -moz-transition: 0.4s all ease-in-out;
+  display: inline-block;
+  color: #ffffff;
+  font-family: 'scienceFair', Arial, sans-serif;
+  font-size: 2.5em;
+  border-radius: 5px;
+  background-color: #ea4b50;
+  text-align: center;
+  width: 49%;
+  padding: 2% 0;
+}
+.about .blurb_area a.blurb_button:last-child {
+  background-color: #c1d564;
+}
+.about .blurb_area a.blurb_button:hover {
+  transition: 0.4s all ease-in-out;
+  -webkit-transition: 0.4s all ease-in-out;
+  -moz-transition: 0.4s all ease-in-out;
+  transform: scale(1.01, 1.02);
+  -webkit-transform: scale(1.01, 1.02);
+}
+.about img {
+  width: 48%;
+}
+.about img {
+  float: right;
+}
+.getting_involved {
+  overflow: auto;
+  padding: 30px 0 30px 0;
+  width: 100%;
+  clear: both;
+}
+.getting_involved .blurb_area {
+  float: right;
+  width: 48%;
+}
+.getting_involved .blurb_area h2 {
+  margin-bottom: 20px;
+}
+.getting_involved .blurb_area p {
+  width: 90%;
+  margin: 0 auto 40px auto;
+}
+.getting_involved .blurb_area .learn {
+  font-family: 'aleobold', Arial, sans-serif;
+  float: right;
+  color: #2c3373;
+  transition: 0.4s all ease-in-out;
+  -webkit-transition: 0.4s all ease-in-out;
+  -moz-transition: 0.4s all ease-in-out;
+}
+.getting_involved .blurb_area .learn:hover {
+  transition: 0.4s all ease-in-out;
+  -webkit-transition: 0.4s all ease-in-out;
+  -moz-transition: 0.4s all ease-in-out;
+  color: #c1d564;
+}
+.getting_involved .blurb_area a.blurb_button {
+  transition: 0.4s all ease-in-out;
+  -webkit-transition: 0.4s all ease-in-out;
+  -moz-transition: 0.4s all ease-in-out;
+  display: inline-block;
+  color: #ffffff;
+  font-family: 'scienceFair', Arial, sans-serif;
+  font-size: 2.5em;
+  border-radius: 5px;
+  background-color: #ea4b50;
+  text-align: center;
+  width: 49%;
+  padding: 2% 0;
+}
+.getting_involved .blurb_area a.blurb_button:last-child {
+  background-color: #c1d564;
+}
+.getting_involved .blurb_area a.blurb_button:hover {
+  transition: 0.4s all ease-in-out;
+  -webkit-transition: 0.4s all ease-in-out;
+  -moz-transition: 0.4s all ease-in-out;
+  transform: scale(1.01, 1.02);
+  -webkit-transform: scale(1.01, 1.02);
+}
+.getting_involved img {
+  width: 48%;
+}
+.getting_involved img {
+  float: left;
+}
+.interactive {
+  clear: both;
+  width: 97%;
+  margin-top: 20px;
+  margin-left: 2%;
+}
+.interactive img {
+  width: 100%;
+}
+.social_media {
+  width: 100%;
+  clear: both;
+}
+.social_media ul {
+  width: 100%;
+}
+.social_media ul a {
+  display: inline-block;
+  width: 32.5%;
+  margin-left: 0.5%;
+}
+.social_media ul a li img {
+  width: 100%;
+}
+.getting_involved_main {
+  width: 100%;
+  padding: 30px 0 0 0;
+  overflow: auto;
+}
+.getting_involved_main img {
+  width: 100%;
+}
+.getting_involved_main p {
+  margin-left: 2.5%;
+  margin-bottom: 20px;
+}
+.getting_involved_main a {
+  float: left;
+  background-color: #c1d564;
+}
+.getting_involved_main .volbtn {
+  font-family: 'scienceFair', Arial, sans-serif;
+  font-size: 2em;
+  border-radius: 5px;
+  background-color: #ea4b50;
+  text-align: center;
+  width: 35%;
+  padding: 2% 0;
+  background-color: #2c3373;
+  color: white;
+  padding: 37px 1%;
+  margin-left: 2%;
+  transition: 0.7s all ease-in-out;
+  -webkit-transition: 0.7s all ease-in-out;
+  -moz-transition: 0.7s all ease-in-out;
+}
+.getting_involved_main .volbtn:hover {
+  transform: scale(1.01, 1.02);
+  -webkit-transform: scale(1.01, 1.02);
+  transition: 0.7s all ease-in-out;
+  -webkit-transition: 0.7s all ease-in-out;
+  -moz-transition: 0.7s all ease-in-out;
+}
+.getting_involved_main .button {
+  font-family: 'scienceFair', Arial, sans-serif;
+  font-size: 2em;
+  border-radius: 5px;
+  background-color: #ea4b50;
+  text-align: center;
+  width: 25%;
+  padding: 2% 0;
+  background-color: #c1d564;
+  padding: 21px 1%;
+  margin-left: 1%;
+  transition: 0.7s all ease-in-out;
+  -webkit-transition: 0.7s all ease-in-out;
+  -moz-transition: 0.7s all ease-in-out;
+}
+.getting_involved_main .button span {
+  font-size: 1.6em;
+}
+.getting_involved_main .button:last-child {
+  padding: 11.5px 3%;
+}
+.getting_involved_main .button:hover {
+  transform: scale(1.01, 1.02);
+  -webkit-transform: scale(1.01, 1.02);
+  transition: 0.7s all ease-in-out;
+  -webkit-transition: 0.7s all ease-in-out;
+  -moz-transition: 0.7s all ease-in-out;
+}
+.sponsors ul {
+  width: 100%;
+}
+.sponsors ul a {
+  width: 40%;
+  margin-left: 5%;
+  margin-bottom: 50px;
+  display: inline-block;
+  transition: 0.7s all ease-in-out;
+  -webkit-transition: 0.7s all ease-in-out;
+  -moz-transition: 0.7s all ease-in-out;
+}
+.sponsors ul a:hover {
+  transform: scale(1.03, 1.04);
+  -webkit-transform: scale(1.03, 1.04);
+  transition: 0.7s all ease-in-out;
+  -webkit-transition: 0.7s all ease-in-out;
+  -moz-transition: 0.7s all ease-in-out;
+}
+.sponsors ul a li img {
+  width: 100%;
+}
+.getting_involved_main {
+  overflow: inherit;
+}
+form {
+  width: 100%;
+  margin-top: -3px;
+}
+form .main_info,
+form .ways,
+form .available,
+form .phone,
+form .liability {
+  width: 90%;
+  margin-left: 4.5%;
+  padding-top: 15px;
+}
+form .main_info label,
+form .ways label,
+form .available label,
+form .phone label,
+form .liability label {
+  display: inline-block;
+  width: 48%;
+  margin-bottom: 15px;
+  margin-right: 10px;
+}
+form .main_info label input[type='text'],
+form .ways label input[type='text'],
+form .available label input[type='text'],
+form .phone label input[type='text'],
+form .liability label input[type='text'],
+form .main_info label input[type='email'],
+form .ways label input[type='email'],
+form .available label input[type='email'],
+form .phone label input[type='email'],
+form .liability label input[type='email'] {
+  width: 100%;
+}
+form .main_info label .label,
+form .ways label .label,
+form .available label .label,
+form .phone label .label,
+form .liability label .label {
+  display: inline-block;
+}
+form .main_info h6,
+form .ways h6,
+form .available h6,
+form .phone h6,
+form .liability h6 {
+  margin-bottom: 10px;
+}
+form .main_info label .label {
+  display: inherit;
+}
+form .ways label,
+form .available label {
+  padding: 22px 0;
+  background-color: #2c3373;
+}
+form .ways label:first-child,
+form .available label:first-child {
+  margin-left: 0;
+}
+form .ways label input[type='checkbox'],
+form .available label input[type='checkbox'] {
+  margin-left: 5%;
+}
+form .phone .sec {
+  width: 100%;
+}
+form .phone .sec label {
+  display: inline-block;
+  width: 30%;
+  margin-left: 3%;
+}
+form .phone .sec label .label {
+  margin-right: 3%;
+}
+form .phone .sec label input[type='text'] {
+  display: inline-block;
+  width: 50%;
+}
+form .liability p {
+  margin: 20px 0 0 0;
+  font-size: 1.3em;
+}
+form .liability label {
+  width: 100%;
+  margin-left: 30px;
+  margin-top: 30px;
+  display: block;
+}
+form .liability label .label {
+  font-size: 1.3em;
+}
+form input[type='submit'] {
+  margin: 50px 0 30px 0;
+  padding: 15px 0;
+  border-radius: 5px;
+  font-size: 1.8em;
+  width: 50%;
+  margin-left: 25%;
+}
+.wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+body {
+  font-size: 16px;
+}
+@media (max-width: 768px) {
+  header {
+    background-image: none;
+    background-color: #2c3373;
+  }
+  header .menu {
+    display: inline-block;
+    float: left;
+    width: 35%;
+    margin: 10px;
+  }
+  header .logo {
+    width: 30%;
+    margin-top: 0px;
+    margin-left: 3%;
+  }
+  header .logo img {
+    width: 65%;
+    margin-bottom: 5px;
+  }
+  header .top_donate {
+    margin-top: 15px;
+    margin-right: 10px;
+  }
+  header .top_donate a {
+    padding: 0 5px;
+    font-size: 2.2em;
+    opacity: 1;
+  }
+  nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    background-color: white;
+    width: 40%;
+    opacity: .95;
+  }
+  nav ul a {
+    padding: 20px 0 0 0;
+    width: 100%;
+  }
+  nav ul a:first-child {
+    padding: 0;
+  }
+  nav ul a li {
+    color: black;
+  }
+  .about,
+  .getting_involved {
+    overflow: inherit;
+  }
+  .about .blurb_area,
+  .getting_involved .blurb_area {
+    float: none;
+    width: 100%;
+  }
+  .about .blurb_area p,
+  .getting_involved .blurb_area p {
+    margin: 10px auto 20px auto;
+    width: 95%;
+  }
+  .about .blurb_area .learn,
+  .getting_involved .blurb_area .learn {
+    margin-right: 50px;
+  }
+  .about .blurb_area a.blurb_button,
+  .getting_involved .blurb_area a.blurb_button {
+    margin-left: .5%;
+  }
+  .about img,
+  .getting_involved img {
+    float: none;
+    width: 98%;
+    margin-left: 1%;
+  }
+  .about {
+    padding-top: 0;
+  }
+  .social_media ul a {
+    width: 30%;
+    margin-left: 2.2%;
+  }
+  .getting_involved_main h2 {
+    text-align: left;
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+  .getting_involved_main .volbtn {
+    width: 90%;
+    margin-left: 4%;
+  }
+  .getting_involved_main .button {
+    margin-top: 15px;
+    width: 40%;
+    margin-left: 4%;
+  }
+  form .main_info,
+  form .ways,
+  form .available {
+    width: 96%;
+    margin-left: 3%;
+    font-size: .9em;
+  }
+  form .main_info label,
+  form .ways label,
+  form .available label {
+    display: inline-block;
+    width: 45%;
+    margin-bottom: 15px;
+    margin-right: 10px;
+  }
+  form .main_info label input[type='text'],
+  form .ways label input[type='text'],
+  form .available label input[type='text'],
+  form .main_info label input[type='email'],
+  form .ways label input[type='email'],
+  form .available label input[type='email'] {
+    width: 100%;
+  }
+  form .main_info label .label,
+  form .ways label .label,
+  form .available label .label {
+    display: inline-block;
+  }
+  form .main_info h6,
+  form .ways h6,
+  form .available h6 {
+    margin-bottom: 10px;
+  }
+  form .liability label {
+    margin-left: 0;
+  }
+  form .liability label .label {
+    font-size: 1em;
+  }
+}
+@media (max-width: 500px) {
+  header .menu {
+    width: 10%;
+  }
+  header .logo {
+    width: 40%;
+  }
+  header .logo img {
+    margin-left: 15%;
+    width: 80%;
+  }
+  header .top_donate a {
+    font-size: 1.8em;
+  }
+  nav {
+    top: 60px;
+    font-size: .8em;
+  }
+  .about .blurb_area h2,
+  .getting_involved .blurb_area h2 {
+    font-size: 2em;
+    text-align: left;
+    margin-left: 10px;
+  }
+  .about .blurb_area p,
+  .getting_involved .blurb_area p {
+    font-size: 1em;
+  }
+  .about .blurb_area .learn,
+  .getting_involved .blurb_area .learn {
+    font-size: 1.3em;
+  }
+  .about .blurb_area a.blurb_button,
+  .getting_involved .blurb_area a.blurb_button {
+    font-family: 'scienceFair', Arial, sans-serif;
+    font-size: 1.8em;
+    border-radius: 5px;
+    background-color: #ea4b50;
+    text-align: center;
+    width: 48%;
+    padding: 2% 0;
+    margin-left: 1%;
+  }
+  .social_media {
+    margin: 20px 0 20px 0;
+  }
+  .social_media ul a {
+    display: block;
+    width: 80%;
+    margin-left: 10%;
+  }
+  .getting_involved_main h2 {
+    font-size: 2em;
+  }
+  .getting_involved_main p {
+    font-size: 1.2em;
+  }
+  .getting_involved_main .volbtn {
+    font-size: 1.6em;
+    padding: 28px 1%;
+  }
+  .getting_involved_main .button {
+    font-size: 1.3em;
+  }
+  .getting_involved_main .button:last-child {
+    padding: 15px 3%;
+  }
+  .interactive2 {
+    margin-left: 1.5%;
+  }
+  .sponsors ul a {
+    width: 70%;
+    margin-left: 15%;
+  }
+  .sponsors ul a:last-child {
+    margin-bottom: 50px;
+  }
+  .sponsors ul a:first-child {
+    margin-top: 20px;
+  }
+  form .main_info label,
+  form .ways label,
+  form .available label,
+  form .phone label,
+  form .liability label {
+    display: block;
+    width: 96%;
+    margin-left: 0%;
+  }
+  form .phone .sec input[type='tel'] {
+    width: 100%;
+  }
+  form .phone .sec label {
+    margin-top: 10px;
+    width: 50%;
+    margin-left: 0;
+  }
+  form .phone .sec label input[type='text'] {
+    width: 100%;
+  }
+  footer .siteMap {
+    display: none;
+  }
+  footer .copywright {
+    width: 70%;
+  }
+  footer .copywright p {
+    margin-top: 5px;
+    line-height: 17px;
+    font-size: 1em;
+  }
+}

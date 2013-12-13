@@ -1,0 +1,80 @@
+// Style Sheet: Getting Involved Page LESS/CSS
+
+// Integrative Assignment: Not Far From the Tree Client
+// By: Ariel Gelbard & Andres Hernandez
+// Date: Tuesday, December 10, 2013
+
+@import 'style.less';
+
+
+
+//Main Area
+.getting_involved_main{
+    width: 100%;
+    padding: 30px 0 0 0;
+    overflow:auto;
+    img{
+        width:100%;
+    }
+    p{
+        margin-left: 2.5%;
+        margin-bottom: 20px;
+    }
+    a{
+        float: left;
+        background-color:@buttonGreen;
+    }
+
+    //Registration Buttons
+    .volbtn{
+        .buttonTemplate(35%,2em);
+        background-color: @blue;
+        color: white;
+        padding: 37px 1%;
+        margin-left: 2%;
+        .smoothTrans(.7s);
+        &:hover{
+            .scaleTrans(1.01,1.02);
+            .smoothTrans(.7s);
+        }
+    }
+    .button{
+        .buttonTemplate(25%,2em);
+        background-color:@buttonGreen;
+        padding: 21px 1%;
+        margin-left: 1%;
+        span{
+            font-size: 1.6em;
+        }
+        &:last-child{
+            padding: 11.5px 3%;
+        }
+        .smoothTrans(.7s);
+        &:hover{
+            .scaleTrans(1.01,1.02);
+            .smoothTrans(.7s);
+        }
+    }
+}
+
+//Sponsors Area
+.sponsors{
+    ul{
+        width: 100%;
+        a{  
+            .boxModel(40%,5%);
+            margin-bottom: 50px;
+            display: inline-block;
+            .smoothTrans(.7s);
+            &:hover{
+                .scaleTrans(1.03,1.04);
+                .smoothTrans(.7s);
+            }
+            li{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

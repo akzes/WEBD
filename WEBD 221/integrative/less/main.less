@@ -1,0 +1,339 @@
+//1. submit information to email
+//make a 'html' email when person submits form via php
+//2. alt tags for images!!!!!
+
+
+//to do if possible!
+//-print media query?? no don't have to do
+//<!-- 		<link rel="stylesheet" href="styles/print.css" type="text/css" media="print" > -->
+//-drop down menu for getting involved?
+//-newsletter signup and submit appear
+
+
+
+/*
+Style Sheet: Main Style Sheet & Media Queries LESS/CSS
+
+Integrative Assignment: Not Far From the Tree Client
+By: Ariel Gelbard & Andres Hernandez
+Date: Tuesday, December 10, 2013
+*/
+
+
+//=================================================================
+//=================================================================
+//IMPORT PRESETS
+@import 'style.less';
+@import 'headerFooter.less';
+@import 'home.less';
+@import 'gettingInvolved.less';
+@import 'volunteerForm.less';
+
+
+//=================================================================
+//=================================================================
+//MAIN DECLERATIONS
+.wrapper{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+body{
+	font-size: 16px;
+}
+
+
+//=================================================================
+//=================================================================
+//=================================================================
+//=================================================================
+//768PX MEDIA QUERY
+@media (max-width:768px){
+
+//=================================================================
+//=================================================================
+	//HEADER AREA
+	header{
+		background-image: none;
+		background-color: @blue;
+		// height: 70px;
+		.menu{
+			display: inline-block;
+			float: left;
+			width: 35%;
+			margin: 10px;
+		}
+		.logo{
+			width: 30%;
+			margin-top: 0px;
+			margin-left: 3%;
+			img{
+				width: 65%;
+				margin-bottom: 5px;
+			}
+		}
+		.top_donate{
+			margin-top: 15px;
+			margin-right: 10px;
+			a{
+				padding: 0 5px;
+				font-size: 2.2em;
+				opacity: 1;
+			}
+		}
+	}
+
+	nav{
+		display: none;
+		position: absolute;
+		top: 70px;
+		background-color: white;
+		width: 40%;
+		opacity:.95;
+		ul{
+			a{
+				padding: 20px 0 0 0;
+				width: 100%;
+				&:first-child{
+					padding: 0;
+				}
+				li{
+					color: black;
+				}
+			}
+		}
+	}
+
+//=================================================================
+//=================================================================
+	//HOME PAGE
+	.about,.getting_involved{
+		overflow: inherit;
+		.blurb_area{
+			float: none;
+			width: 100%;
+			p{
+				margin: 10px auto 20px auto;
+				width: 95%;
+			}
+			.learn{
+				margin-right: 50px;
+			}
+			a.blurb_button{
+				margin-left: .5%;
+			}
+		}
+		img{
+			float: none;
+			.boxModel(98%,1%);
+		}
+	}
+	.about{
+		padding-top: 0;
+	}
+
+	.social_media{
+		ul{
+	        a{
+	        	.boxModel(30%,2.2%);
+	        }
+	    }
+	}
+
+//=================================================================
+//=================================================================
+	//GETTING INVOLVED
+   	.getting_involved_main{
+   		h2{
+   			text-align: left;
+   			font-size: 2em;
+   			margin-bottom: 10px;
+   			margin-left: 10px;
+   		}
+	    .volbtn{
+			.boxModel(90%,4%);
+		}
+		.button{
+			margin-top: 15px;
+			.boxModel(40%,4%);		
+		}
+	}
+
+
+//=================================================================
+//=================================================================
+	//VOLUNTEER FORM
+	form{
+		.main_info,.ways,.available{
+			.boxModel(96%,3%);
+			font-size: .9em;
+			.form_mix(45%);
+		}
+		.liability{
+			label{
+				margin-left: 0;
+				.label{
+					font-size: 1em;
+				}
+			}
+		}
+	}
+
+
+//=================================================================
+}
+
+
+
+
+//=================================================================
+//=================================================================
+//=================================================================
+//=================================================================
+//500PX MEDIA QUERY
+@media (max-width:500px){
+
+//=================================================================
+//=================================================================
+	//HEADER
+	header{
+		.menu{
+			width: 10%;
+		}
+		.logo{
+			width: 40%;
+			img{
+				margin-left: 15%;
+				width: 80%;
+			}
+		}
+		.top_donate{
+			a{
+				font-size: 1.8em;
+			}
+		}
+	}
+	nav{
+		top:60px;
+		font-size: .8em;
+	}
+
+//=================================================================
+//=================================================================
+	//HOME PAGE
+	.about,.getting_involved{
+		.blurb_area{
+			h2{
+				font-size: 2em;
+				text-align: left;
+				margin-left: 10px;
+			}
+			p{
+				font-size: 1em;
+			}
+			.learn{
+				font-size: 1.3em;
+			}
+			a.blurb_button{
+				.buttonTemplate(48%,1.8em);
+				margin-left: 1%;
+			}
+		}
+	}
+
+	.social_media{
+		margin: 20px 0 20px 0;
+		ul{
+	        a{
+	            display: block;
+	            .boxModel(80%,10%);
+	        }
+	    }
+	}
+
+//=================================================================
+//=================================================================
+	//GETTING INVOLVED
+	.getting_involved_main{
+		h2{
+			font-size: 2em;
+		}
+		p{
+			font-size: 1.2em;
+		}
+		.volbtn{
+			font-size: 1.6em;
+			padding: 28px 1%;
+		}
+		.button{
+			font-size: 1.3em;
+			&:last-child{
+				padding: 15px 3%;
+			}
+		}
+	}
+
+	.interactive2{
+		margin-left: 1.5%;
+	}
+
+	.sponsors{
+	    ul{
+	        a{  
+	        	.boxModel(70%,15%);
+	            &:last-child{
+	            	margin-bottom: 50px;
+	            }
+	            &:first-child{
+	            	margin-top: 20px;
+	            }
+	        }
+	    }
+	}
+
+//=================================================================
+//=================================================================
+	//VOLUNTEER FORM
+	form{
+		.main_info,.ways,.available,.phone,.liability{
+			label{
+				display: block;
+				.boxModel(96%,0%);
+			}
+		}
+		.phone{
+			.sec{
+				input[type='tel']{
+					width: 100%;
+				}
+				label{
+					margin-top: 10px;
+					.boxModel(50%,0);
+					input[type='text']{
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+
+//=================================================================
+//=================================================================
+	//FOOTER
+	footer{
+		.siteMap{
+			display: none;
+		}
+		.copywright{
+			width: 70%;
+			p{
+				margin-top: 5px;
+				line-height: 17px;
+				font-size: 1em;
+			}
+		}
+	}
+
+//=================================================================
+}
+

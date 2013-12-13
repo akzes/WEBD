@@ -1,0 +1,132 @@
+// Style Sheet: Header and Footer LESS/CSS
+
+// Integrative Assignment: Not Far From the Tree Client
+// By: Ariel Gelbard & Andres Hernandez
+// Date: Tuesday, December 10, 2013
+
+
+
+//Header Area
+header{
+    float: left;
+    width: 100%;
+    background-image: url('../assets/headerapples.png');
+    .menu{
+        display: none;
+        width: 32%;
+    }
+    .logo{
+        float: left;
+        width: 30%;
+        margin-left: 20px;
+        img{
+            margin-top: 5%;
+            width: 80%;
+        }
+    }
+    .top_donate{
+        float: right;
+        margin-top:20px;
+        margin-right: 15px;
+        a{
+           opacity: .8;
+            .smoothTrans(.7s);
+            .buttonTemplate(15%,2.5em);
+            padding: 5px 15px;
+            color: white;
+            &:hover{
+                .smoothTrans(.7s);
+                opacity: 1;
+            }        
+        }
+
+    }
+}
+
+//Navigation Area
+nav{
+    clear: both;
+    background-color: @blue;
+    width: 100%;
+    padding: 5px 0 5px 0;
+    ul{
+        width: 100%;
+        margin: 0 auto;
+        display: inline-block;
+        a{
+            .smoothTrans(.7s);
+            width: 19%;
+            display: inline-block;
+            color:@buttonGreen;
+            &:hover{
+                .smoothTrans(.7s);
+                color: white;
+            }
+            li{
+                font-family: 'sabado', Arial, sans-serif;
+                text-align: center;
+            }
+        }
+    }
+    .current_page{
+        color: @white;
+    }
+}
+
+
+//Footer Area
+footer{
+    width: 100%;
+    background-color: @blue;
+    padding: 10px 0;
+    overflow: auto;
+    .siteMap{
+        float: left;
+        width: 20%;
+        margin-top: 10px;
+        a{
+            float: left;
+            margin-left: 5px;
+            .smoothTrans(.7s);
+            &:hover{
+                .smoothTrans(.7s);
+                color: @green;
+            }
+        }
+    }
+    .copywright{
+        float: left;
+        width: 60%;
+        p{
+            margin-top: 10px;
+            color: @green;
+            text-align: center;
+        }
+    }
+
+    .socialFootMix(@top,@width,@img,@imgHover){
+        float: right;
+        height: 40px;
+        background-image:url(@img);
+        background-repeat:no-repeat;
+        text-indent:-9999px;
+        margin: @top -5px 0 0;
+        margin-right: -5px;
+        width: @width;
+        .smoothTrans(.7s);
+        &:hover{
+            background-image:url(@imgHover);
+            .scaleTrans(1.03,1.02);
+            .smoothTrans(.7s);
+        }        
+    }
+    a.fa{
+        .socialFootMix(5px,40px,'../assets/facebookFooter.png','../assets/facebookFooterHover.png');        
+    }
+    a.tw{
+        .socialFootMix(8px,50px,'../assets/twitterFooter.png','../assets/twitterFooterHover.png');
+    }  
+
+
+    clear: both;
+}

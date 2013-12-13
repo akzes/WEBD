@@ -1,0 +1,100 @@
+// Style Sheet: Home Page LESS/CSS
+
+// Integrative Assignment: Not Far From the Tree Client
+// By: Ariel Gelbard & Andres Hernandez
+// Date: Tuesday, December 10, 2013
+
+@import 'style.less';
+
+//Mixin for Blocks on Main Page Layout (See Below)
+.blurbmix(@pos){
+    width: 100%;
+    .blurb_area{
+        float: @pos;
+        width: 48%;
+        h2{
+            margin-bottom: 20px;
+        }
+        p{
+            width: 90%;
+            margin: 0 auto 40px auto;
+        }
+        .learn{
+            font-family: 'aleobold', Arial, sans-serif;
+            float: right;
+            color: @blue;
+            .smoothTrans(.4s);
+            &:hover{
+                .smoothTrans(.4s);
+                color: @buttonGreen;
+            }
+        }
+        a.blurb_button{
+            .smoothTrans(.4s);
+            display: inline-block;
+            color: @white;
+            .buttonTemplate(49%,2.5em);
+             padding: 2% 0;
+            &:last-child{
+                background-color: @buttonGreen;
+            }
+            &:hover{
+                .smoothTrans(.4s);
+                .scaleTrans(1.01,1.02);
+            }            
+        }
+    }
+    img{
+        width: 48%;
+    }
+    clear: both;
+}
+
+
+//About Block
+.about{
+    overflow: auto;
+    padding: 30px 0 0 0;
+    .blurbmix(left);
+    img{
+        float: right;
+    }
+}
+//Getting Involved Block
+.getting_involved{
+    overflow: auto;
+    padding: 30px 0 30px 0;
+    .blurbmix(right);
+    img{
+        float: left;
+    }
+}
+
+//Banner Area
+.interactive{
+    clear: both;
+    width: 97%;
+    margin-top: 20px;
+    margin-left: 2%;
+    img{
+        width: 100%;
+    }
+}
+
+//Social Media Links
+.social_media{
+    width: 100%;
+    ul{
+        width: 100%;
+        a{
+            display: inline-block;
+            .boxModel(32.5%,.5%);
+            li{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    clear: both;
+}
